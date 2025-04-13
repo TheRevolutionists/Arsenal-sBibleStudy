@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Bible Study Group</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #f8f7f2;
+        }
+        header {
+            background-color: #4a6741;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        nav {
+            background-color: #6c8e5e;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .week-card {
+            background-color: #e8f4e5;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .week-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .scripture-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #6c8e5e;
+            margin: 20px 0;
+        }
+        .soap-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .soap-card {
+            background-color: #f0f7ed;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .soap-header {
+            font-weight: bold;
+            color: #4a6741;
+            margin-bottom: 10px;
+        }
+        .attendance {
+            background-color: #e8f4e5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .notes-section {
+            background-color: #fffdf0;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 5px solid #d4c76c;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .weekly-title {
+            color: #4a6741;
+            border-bottom: 2px solid #6c8e5e;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 768px) {
+            .soap-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weekly Bible Study Group</h1>
+        <p>Growing together in faith and knowledge</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#weeks">Weekly Studies</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- HOME PAGE CONTENT -->
+        <section class="welcome-section">
+            <h2>Welcome to Our Bible Study Group</h2>
+            <p>Join us as we explore Scripture together, share insights, and grow in our faith journey. Our weekly studies provide an opportunity for deep reflection and meaningful discussion.</p>
+            <img src="/api/placeholder/600/300" alt="Bible study group" />
+        </section>
+        
+        <section id="weeks">
+            <h2>Weekly Studies</h2>
+            <p>Select a week below to access study materials, SOAP analysis, and notes:</p>
+            
+            <div class="week-grid">
+                <a href="week1.html">
+                    <div class="week-card">
+                        <h3>Week 1</h3>
+                        <p>April 6, 2025</p>
+                        <p>Matthew 5:1-12</p>
+                    </div>
+                </a>
+                <a href="week2.html">
+                    <div class="week-card">
+                        <h3>Week 2</h3>
+                        <p>April 13, 2025</p>
+                        <p>Matthew 5:13-16</p>
+                    </div>
+                </a>
+                <a href="week3.html">
+                    <div class="week-card">
+                        <h3>Week 3</h3>
+                        <p>April 20, 2025</p>
+                        <p>Matthew 5:17-20</p>
+                    </div>
+                </a>
+                <a href="week4.html">
+                    <div class="week-card">
+                        <h3>Week 4</h3>
+                        <p>April 27, 2025</p>
+                        <p>Matthew 5:21-26</p>
+                    </div>
+                </a>
+                <!-- More weeks can be added here -->
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>About Our Group</h2>
+            <p>Our Bible study group meets weekly to study Scripture, share insights, and support each other in our faith journey. We welcome people of all backgrounds and knowledge levels.</p>
+            <p>Meeting time: Sundays at 7:00 PM</p>
+            <p>Location: Community Center, Room 204</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information about our Bible study group, please contact:</p>
+            <p>Email: biblestudy@example.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
+        
+        <!-- SAMPLE WEEKLY PAGE CONTENT (normally this would be on a separate page) -->
+        <section class="weekly-page" style="display: none;">
+            <h2 class="weekly-title">Week 2: Matthew 5:13-16 (April 13, 2025)</h2>
+            
+            <div class="attendance">
+                <h3>Attendance</h3>
+                <p>Peak attendance: <strong>18 members</strong></p>
+            </div>
+            
+            <div class="scripture-section">
+                <h3>Scripture Passage</h3>
+                <blockquote>
+                    <p><strong>Matthew 5:13-16 (NIV)</strong></p>
+                    <p>"You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.</p>
+                    <p>You are the light of the world. A town built on a hill cannot be hidden. Neither do people light a lamp and put it under a bowl. Instead they put it on its stand, and it gives light to everyone in the house. In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven."</p>
+                </blockquote>
+            </div>
+            
+            <h3>SOAP Analysis</h3>
+            <div class="soap-container">
+                <div class="soap-card">
+                    <div class="soap-header">Scripture (Matthew 5:13)</div>
+                    <p>"You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot."</p>
+                    
+                    <div class="soap-header">Observation</div>
+                    <p>Jesus uses salt as a metaphor for his followers. Salt was incredibly valuable in ancient times for preserving and flavoring food. Jesus warns that salt that loses its distinctive qualities becomes worthless.</p>
+                    
+                    <div class="soap-header">Application</div>
+                    <p>As Christians, we're called to bring "flavor" and "preservation" to the world around us. We should maintain our distinctive Christian character and influence, or risk becoming ineffective in our witness.</p>
+                    
+                    <div class="soap-header">Prayer</div>
+                    <p>Lord, help me to maintain my distinctive Christian character and values even when surrounded by different worldviews. Let me be salt in this world, bringing your preserving and flavoring influence wherever I go.</p>
+                </div>
+                
+                <div class="soap-card">
+                    <div class="soap-header">Scripture (Matthew 5:14-16)</div>
+                    <p>"You are the light of the world. A town built on a hill cannot be hidden. Neither do people light a lamp and put it under a bowl. Instead they put it on its stand, and it gives light to everyone in the house. In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven."</p>
+                    
+                    <div class="soap-header">Observation</div>
+                    <p>Jesus shifts to another metaphor, calling his followers "light of the world." Light is meant to be visible and to illuminate darkness. Jesus emphasizes that our good deeds should be visible not for self-glory but to bring glory to God.</p>
+                    
+                    <div class="soap-header">Application</div>
+                    <p>I'm called to be visible in my faith, not hiding my relationship with God. My actions should point others toward God, not draw attention to myself. This requires intentionality in how I live and serve.</p>
+                    
+                    <div class="soap-header">Prayer</div>
+                    <p>Father, help me to shine your light boldly in this world. May my words and actions illuminate the darkness around me and draw others to you. Keep me from hiding my faith out of fear or complacency.</p>
+                </div>
+            </div>
+            
+            <div class="notes-section">
+                <h3>Study Notes</h3>
+                <h4>Historical Context</h4>
+                <p>In the ancient world, salt was extremely valuable - sometimes even used as currency. Roman soldiers were often paid in salt (the origin of the word "salary"). Salt was used primarily for preserving food in a time without refrigeration and for enhancing flavor.</p>
+                
+                <h4>Discussion Points</h4>
+                <ul>
+                    <li>What are the qualities of salt that Jesus might be referring to in this metaphor?</li>
+                    <li>In what ways can Christians act as "preservatives" in society?</li>
+                    <li>How do we balance being "in the world but not of it" with being salt and light?</li>
+                    <li>What does it mean practically to let our light shine before others?</li>
+                    <li>How can we ensure our good deeds bring glory to God rather than to ourselves?</li>
+                </ul>
+                
+                <h4>Key Insights</h4>
+                <p>Both metaphors (salt and light) suggest that Christians should have a distinctive and positive influence on the world around them. Jesus isn't calling for withdrawal from society but for transformative engagement with it.</p>
+                
+                <h4>Cross References</h4>
+                <p>Leviticus 2:13 - Salt was required with offerings</p>
+                <p>Isaiah 49:6 - God's servant as a light to the nations</p>
+                <p>Philippians 2:14-16 - Shining like stars in the universe</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Weekly Bible Study Group | All Rights Reserved</p>
+        <p><small>Website last updated: April 13, 2025</small></p>
+    </footer>
+
+    <script>
+        // This script could be expanded to add interactivity
+        // For example, you might want to add search functionality or filters
+        
+        // Sample script to show weekly content (in a real site, this would be separate pages)
+        document.addEventListener('DOMContentLoaded', function() {
+            // This is just a placeholder for demonstration purposes
+            // In a real implementation, each week would have its own page
+        });
+    </script>
+</body>
+</html>
